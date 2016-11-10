@@ -33,4 +33,16 @@ public class ClockDisplay
         minuto.setValue(nuevoMinuto);
         
     }
+    
+   public void avanzarTiempo(){
+       minuto.increment();
+       if(minuto.getValue() == 0){
+           hora.increment();
+        }
+        
+       
+    
+    
+    }
+    
 }

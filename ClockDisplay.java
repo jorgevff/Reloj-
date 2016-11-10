@@ -36,6 +36,7 @@ public class ClockDisplay
     
    public void avanzarTiempo(){
        minuto.increment();
+       //se iguala a 0 porque al volver a 0 tiene que aumentar la hora
        if(minuto.getValue() == 0){
            hora.increment();
         }
@@ -43,6 +44,11 @@ public class ClockDisplay
        
     
     
+    }
+    
+   public String mostrarHora(){
+    
+       return hora.getDisplayValue() + ":" + minuto.getDisplayValue();
     }
     
 }
